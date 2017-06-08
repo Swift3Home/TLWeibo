@@ -13,7 +13,7 @@ class TLBaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        view.backgroundColor = UIColor.tl_random()
     }
 
     override func didReceiveMemoryWarning() {

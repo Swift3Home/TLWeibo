@@ -16,6 +16,18 @@
 		7EDB648A1EE9974E009242C7 /* TLMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB64891EE9974E009242C7 /* TLMessageViewController.swift */; };
 		7EDB648C1EE99761009242C7 /* TLDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB648B1EE99761009242C7 /* TLDiscoverViewController.swift */; };
 		7EDB648E1EE99780009242C7 /* TLProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB648D1EE99780009242C7 /* TLProfileViewController.swift */; };
+		7EDB64CF1EE9A16E009242C7 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB64B81EE9A16E009242C7 /* NSArray+Log.m */; };
+		7EDB64D01EE9A16E009242C7 /* NSAttributedString+TLAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB64BA1EE9A16E009242C7 /* NSAttributedString+TLAdditon.m */; };
+		7EDB64D11EE9A16E009242C7 /* NSObject+TLRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB64BC1EE9A16E009242C7 /* NSObject+TLRuntime.m */; };
+		7EDB64D21EE9A16E009242C7 /* NSString+TLBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB64BE1EE9A16E009242C7 /* NSString+TLBase64.m */; };
+		7EDB64D31EE9A16E009242C7 /* NSString+TLHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB64C01EE9A16E009242C7 /* NSString+TLHash.m */; };
+		7EDB64D41EE9A16E009242C7 /* NSString+TLPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB64C21EE9A16E009242C7 /* NSString+TLPath.m */; };
+		7EDB64D51EE9A16E009242C7 /* UIButton+TLAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB64C41EE9A16E009242C7 /* UIButton+TLAddition.m */; };
+		7EDB64D61EE9A16E009242C7 /* UIColor+TLAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB64C61EE9A16E009242C7 /* UIColor+TLAddition.m */; };
+		7EDB64D71EE9A16E009242C7 /* UILabel+TLAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB64C81EE9A16E009242C7 /* UILabel+TLAddition.m */; };
+		7EDB64D81EE9A16E009242C7 /* UIScreen+TLAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB64CA1EE9A16E009242C7 /* UIScreen+TLAddition.m */; };
+		7EDB64D91EE9A16E009242C7 /* UIView+TLAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB64CC1EE9A16E009242C7 /* UIView+TLAddition.m */; };
+		7EDB64DA1EE9A16E009242C7 /* UIViewController+TLAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB64CE1EE9A16E009242C7 /* UIViewController+TLAddition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +42,32 @@
 		7EDB64891EE9974E009242C7 /* TLMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLMessageViewController.swift; sourceTree = "<group>"; };
 		7EDB648B1EE99761009242C7 /* TLDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLDiscoverViewController.swift; sourceTree = "<group>"; };
 		7EDB648D1EE99780009242C7 /* TLProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLProfileViewController.swift; sourceTree = "<group>"; };
+		7EDB64B61EE9A16E009242C7 /* TLAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLAdditions.h; sourceTree = "<group>"; };
+		7EDB64B71EE9A16E009242C7 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		7EDB64B81EE9A16E009242C7 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		7EDB64B91EE9A16E009242C7 /* NSAttributedString+TLAdditon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+TLAdditon.h"; sourceTree = "<group>"; };
+		7EDB64BA1EE9A16E009242C7 /* NSAttributedString+TLAdditon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+TLAdditon.m"; sourceTree = "<group>"; };
+		7EDB64BB1EE9A16E009242C7 /* NSObject+TLRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+TLRuntime.h"; sourceTree = "<group>"; };
+		7EDB64BC1EE9A16E009242C7 /* NSObject+TLRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TLRuntime.m"; sourceTree = "<group>"; };
+		7EDB64BD1EE9A16E009242C7 /* NSString+TLBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TLBase64.h"; sourceTree = "<group>"; };
+		7EDB64BE1EE9A16E009242C7 /* NSString+TLBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TLBase64.m"; sourceTree = "<group>"; };
+		7EDB64BF1EE9A16E009242C7 /* NSString+TLHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TLHash.h"; sourceTree = "<group>"; };
+		7EDB64C01EE9A16E009242C7 /* NSString+TLHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TLHash.m"; sourceTree = "<group>"; };
+		7EDB64C11EE9A16E009242C7 /* NSString+TLPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TLPath.h"; sourceTree = "<group>"; };
+		7EDB64C21EE9A16E009242C7 /* NSString+TLPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TLPath.m"; sourceTree = "<group>"; };
+		7EDB64C31EE9A16E009242C7 /* UIButton+TLAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+TLAddition.h"; sourceTree = "<group>"; };
+		7EDB64C41EE9A16E009242C7 /* UIButton+TLAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TLAddition.m"; sourceTree = "<group>"; };
+		7EDB64C51EE9A16E009242C7 /* UIColor+TLAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TLAddition.h"; sourceTree = "<group>"; };
+		7EDB64C61EE9A16E009242C7 /* UIColor+TLAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TLAddition.m"; sourceTree = "<group>"; };
+		7EDB64C71EE9A16E009242C7 /* UILabel+TLAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+TLAddition.h"; sourceTree = "<group>"; };
+		7EDB64C81EE9A16E009242C7 /* UILabel+TLAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TLAddition.m"; sourceTree = "<group>"; };
+		7EDB64C91EE9A16E009242C7 /* UIScreen+TLAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+TLAddition.h"; sourceTree = "<group>"; };
+		7EDB64CA1EE9A16E009242C7 /* UIScreen+TLAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+TLAddition.m"; sourceTree = "<group>"; };
+		7EDB64CB1EE9A16E009242C7 /* UIView+TLAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TLAddition.h"; sourceTree = "<group>"; };
+		7EDB64CC1EE9A16E009242C7 /* UIView+TLAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TLAddition.m"; sourceTree = "<group>"; };
+		7EDB64CD1EE9A16E009242C7 /* UIViewController+TLAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TLAddition.h"; sourceTree = "<group>"; };
+		7EDB64CE1EE9A16E009242C7 /* UIViewController+TLAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TLAddition.m"; sourceTree = "<group>"; };
+		7EDB64DB1EE9A1E1009242C7 /* TLWeibo-Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TLWeibo-Bridge.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +102,7 @@
 			children = (
 				7EDB64771EE995D9009242C7 /* Class */,
 				7EDB64651EE95027009242C7 /* AppDelegate.swift */,
+				7EDB64DB1EE9A1E1009242C7 /* TLWeibo-Bridge.h */,
 				7EDB646C1EE95027009242C7 /* Assets.xcassets */,
 				7EDB64711EE95027009242C7 /* Info.plist */,
 			);
@@ -91,6 +130,7 @@
 		7EDB64791EE995D9009242C7 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				7EDB64B51EE9A16E009242C7 /* Additions */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -154,6 +194,38 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7EDB64B51EE9A16E009242C7 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				7EDB64B61EE9A16E009242C7 /* TLAdditions.h */,
+				7EDB64B71EE9A16E009242C7 /* NSArray+Log.h */,
+				7EDB64B81EE9A16E009242C7 /* NSArray+Log.m */,
+				7EDB64B91EE9A16E009242C7 /* NSAttributedString+TLAdditon.h */,
+				7EDB64BA1EE9A16E009242C7 /* NSAttributedString+TLAdditon.m */,
+				7EDB64BB1EE9A16E009242C7 /* NSObject+TLRuntime.h */,
+				7EDB64BC1EE9A16E009242C7 /* NSObject+TLRuntime.m */,
+				7EDB64BD1EE9A16E009242C7 /* NSString+TLBase64.h */,
+				7EDB64BE1EE9A16E009242C7 /* NSString+TLBase64.m */,
+				7EDB64BF1EE9A16E009242C7 /* NSString+TLHash.h */,
+				7EDB64C01EE9A16E009242C7 /* NSString+TLHash.m */,
+				7EDB64C11EE9A16E009242C7 /* NSString+TLPath.h */,
+				7EDB64C21EE9A16E009242C7 /* NSString+TLPath.m */,
+				7EDB64C31EE9A16E009242C7 /* UIButton+TLAddition.h */,
+				7EDB64C41EE9A16E009242C7 /* UIButton+TLAddition.m */,
+				7EDB64C51EE9A16E009242C7 /* UIColor+TLAddition.h */,
+				7EDB64C61EE9A16E009242C7 /* UIColor+TLAddition.m */,
+				7EDB64C71EE9A16E009242C7 /* UILabel+TLAddition.h */,
+				7EDB64C81EE9A16E009242C7 /* UILabel+TLAddition.m */,
+				7EDB64C91EE9A16E009242C7 /* UIScreen+TLAddition.h */,
+				7EDB64CA1EE9A16E009242C7 /* UIScreen+TLAddition.m */,
+				7EDB64CB1EE9A16E009242C7 /* UIView+TLAddition.h */,
+				7EDB64CC1EE9A16E009242C7 /* UIView+TLAddition.m */,
+				7EDB64CD1EE9A16E009242C7 /* UIViewController+TLAddition.h */,
+				7EDB64CE1EE9A16E009242C7 /* UIViewController+TLAddition.m */,
+			);
+			path = Additions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,13 +300,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EDB64D61EE9A16E009242C7 /* UIColor+TLAddition.m in Sources */,
+				7EDB64CF1EE9A16E009242C7 /* NSArray+Log.m in Sources */,
 				7EDB648E1EE99780009242C7 /* TLProfileViewController.swift in Sources */,
+				7EDB64D71EE9A16E009242C7 /* UILabel+TLAddition.m in Sources */,
+				7EDB64D01EE9A16E009242C7 /* NSAttributedString+TLAdditon.m in Sources */,
+				7EDB64DA1EE9A16E009242C7 /* UIViewController+TLAddition.m in Sources */,
+				7EDB64D21EE9A16E009242C7 /* NSString+TLBase64.m in Sources */,
 				7EDB648A1EE9974E009242C7 /* TLMessageViewController.swift in Sources */,
 				7EDB648C1EE99761009242C7 /* TLDiscoverViewController.swift in Sources */,
 				7EDB64881EE99733009242C7 /* TLHomeViewController.swift in Sources */,
+				7EDB64D51EE9A16E009242C7 /* UIButton+TLAddition.m in Sources */,
+				7EDB64D81EE9A16E009242C7 /* UIScreen+TLAddition.m in Sources */,
 				7EDB64661EE95027009242C7 /* AppDelegate.swift in Sources */,
+				7EDB64D11EE9A16E009242C7 /* NSObject+TLRuntime.m in Sources */,
 				7EDB64841EE996A3009242C7 /* TLNavigationController.swift in Sources */,
 				7EDB64821EE99651009242C7 /* TLMainViewController.swift in Sources */,
+				7EDB64D41EE9A16E009242C7 /* NSString+TLPath.m in Sources */,
+				7EDB64D91EE9A16E009242C7 /* UIView+TLAddition.m in Sources */,
+				7EDB64D31EE9A16E009242C7 /* NSString+TLHash.m in Sources */,
 				7EDB64861EE996DA009242C7 /* TLBaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +432,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.niwodai.TLWeibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TLWeibo/TLWeibo-Bridge.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -363,6 +448,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.niwodai.TLWeibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TLWeibo/TLWeibo-Bridge.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
