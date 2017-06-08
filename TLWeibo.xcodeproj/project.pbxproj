@@ -88,7 +88,7 @@
 				TargetAttributes = {
 					7EDB64611EE95027009242C7 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 68QKWWUHPW;
+						DevelopmentTeam = 2ZYJLJK82E;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -234,7 +234,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 68QKWWUHPW;
+				DEVELOPMENT_TEAM = 2ZYJLJK82E;
 				INFOPLIST_FILE = TLWeibo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -249,7 +249,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 68QKWWUHPW;
+				DEVELOPMENT_TEAM = 2ZYJLJK82E;
 				INFOPLIST_FILE = TLWeibo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
