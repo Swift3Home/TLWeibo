@@ -28,6 +28,11 @@
 		7EDB64D81EE9A16E009242C7 /* UIScreen+TLAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB64CA1EE9A16E009242C7 /* UIScreen+TLAddition.m */; };
 		7EDB64D91EE9A16E009242C7 /* UIView+TLAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB64CC1EE9A16E009242C7 /* UIView+TLAddition.m */; };
 		7EDB64DA1EE9A16E009242C7 /* UIViewController+TLAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB64CE1EE9A16E009242C7 /* UIViewController+TLAddition.m */; };
+		7EDB64DE1EEA70D2009242C7 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB64DD1EEA70D2009242C7 /* Bundle+Extensions.swift */; };
+		7EDB64E11EEBBA10009242C7 /* TLTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB64E01EEBBA10009242C7 /* TLTestViewController.swift */; };
+		7EDB64E31EEBD465009242C7 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB64E21EEBD465009242C7 /* UIBarButtonItem+Extension.swift */; };
+		7EDB64E81EED2BAC009242C7 /* TLVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB64E71EED2BAC009242C7 /* TLVisitorView.swift */; };
+		7EE0BF4E1EEEE763005EB19E /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 7EE0BF4D1EEEE763005EB19E /* main.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +73,11 @@
 		7EDB64CD1EE9A16E009242C7 /* UIViewController+TLAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TLAddition.h"; sourceTree = "<group>"; };
 		7EDB64CE1EE9A16E009242C7 /* UIViewController+TLAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TLAddition.m"; sourceTree = "<group>"; };
 		7EDB64DB1EE9A1E1009242C7 /* TLWeibo-Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TLWeibo-Bridge.h"; sourceTree = "<group>"; };
+		7EDB64DD1EEA70D2009242C7 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		7EDB64E01EEBBA10009242C7 /* TLTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLTestViewController.swift; sourceTree = "<group>"; };
+		7EDB64E21EEBD465009242C7 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		7EDB64E71EED2BAC009242C7 /* TLVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLVisitorView.swift; sourceTree = "<group>"; };
+		7EE0BF4D1EEEE763005EB19E /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +140,7 @@
 		7EDB64791EE995D9009242C7 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				7EDB64DC1EEA7093009242C7 /* Extensitons */,
 				7EDB64B51EE9A16E009242C7 /* Additions */,
 			);
 			path = Tools;
@@ -166,8 +177,9 @@
 		7EDB647D1EE995D9009242C7 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				7EDB64811EE99651009242C7 /* TLMainViewController.swift */,
-				7EDB64831EE996A3009242C7 /* TLNavigationController.swift */,
+				7EDB64DF1EEBB9EB009242C7 /* TLTest */,
+				7EDB64E51EEC4CBC009242C7 /* MainController */,
+				7EDB64E61EED2B73009242C7 /* VisitorView */,
 				7EDB64851EE996DA009242C7 /* TLBaseViewController.swift */,
 			);
 			path = Main;
@@ -226,6 +238,41 @@
 				7EDB64CE1EE9A16E009242C7 /* UIViewController+TLAddition.m */,
 			);
 			path = Additions;
+			sourceTree = "<group>";
+		};
+		7EDB64DC1EEA7093009242C7 /* Extensitons */ = {
+			isa = PBXGroup;
+			children = (
+				7EDB64DD1EEA70D2009242C7 /* Bundle+Extensions.swift */,
+				7EDB64E21EEBD465009242C7 /* UIBarButtonItem+Extension.swift */,
+			);
+			path = Extensitons;
+			sourceTree = "<group>";
+		};
+		7EDB64DF1EEBB9EB009242C7 /* TLTest */ = {
+			isa = PBXGroup;
+			children = (
+				7EDB64E01EEBBA10009242C7 /* TLTestViewController.swift */,
+			);
+			path = TLTest;
+			sourceTree = "<group>";
+		};
+		7EDB64E51EEC4CBC009242C7 /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				7EE0BF4D1EEEE763005EB19E /* main.json */,
+				7EDB64811EE99651009242C7 /* TLMainViewController.swift */,
+				7EDB64831EE996A3009242C7 /* TLNavigationController.swift */,
+			);
+			name = MainController;
+			sourceTree = "<group>";
+		};
+		7EDB64E61EED2B73009242C7 /* VisitorView */ = {
+			isa = PBXGroup;
+			children = (
+				7EDB64E71EED2BAC009242C7 /* TLVisitorView.swift */,
+			);
+			path = VisitorView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EE0BF4E1EEEE763005EB19E /* main.json in Resources */,
 				7EDB646D1EE95027009242C7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,14 +354,18 @@
 				7EDB64D71EE9A16E009242C7 /* UILabel+TLAddition.m in Sources */,
 				7EDB64D01EE9A16E009242C7 /* NSAttributedString+TLAdditon.m in Sources */,
 				7EDB64DA1EE9A16E009242C7 /* UIViewController+TLAddition.m in Sources */,
+				7EDB64DE1EEA70D2009242C7 /* Bundle+Extensions.swift in Sources */,
 				7EDB64D21EE9A16E009242C7 /* NSString+TLBase64.m in Sources */,
 				7EDB648A1EE9974E009242C7 /* TLMessageViewController.swift in Sources */,
+				7EDB64E31EEBD465009242C7 /* UIBarButtonItem+Extension.swift in Sources */,
 				7EDB648C1EE99761009242C7 /* TLDiscoverViewController.swift in Sources */,
+				7EDB64E11EEBBA10009242C7 /* TLTestViewController.swift in Sources */,
 				7EDB64881EE99733009242C7 /* TLHomeViewController.swift in Sources */,
 				7EDB64D51EE9A16E009242C7 /* UIButton+TLAddition.m in Sources */,
 				7EDB64D81EE9A16E009242C7 /* UIScreen+TLAddition.m in Sources */,
 				7EDB64661EE95027009242C7 /* AppDelegate.swift in Sources */,
 				7EDB64D11EE9A16E009242C7 /* NSObject+TLRuntime.m in Sources */,
+				7EDB64E81EED2BAC009242C7 /* TLVisitorView.swift in Sources */,
 				7EDB64841EE996A3009242C7 /* TLNavigationController.swift in Sources */,
 				7EDB64821EE99651009242C7 /* TLMainViewController.swift in Sources */,
 				7EDB64D41EE9A16E009242C7 /* NSString+TLPath.m in Sources */,
