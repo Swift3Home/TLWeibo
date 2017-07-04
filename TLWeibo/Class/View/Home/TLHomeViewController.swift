@@ -13,27 +13,15 @@ private let cellId = "cellId"
 
 class TLHomeViewController: TLBaseViewController {
 
-    // 微博数据数组
-    fileprivate lazy var statusList = [String]()
+    // 列表视图模型
+    fileprivate lazy var listViewModel = TLStatusListViewModel()
     
     // 加载数据
     override func loadData() {
         
-        print("开始加载数据")
+        print("准备刷新，最后一条 \(self.listViewModel.statusList.last?.text ?? "")")
         
-        // 模拟`延迟`加载数据 -> Swift 2.0：dispatch_after
-        //                    Swift 3.0：asyncAfter
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
-            for i in 0..<15 {
-                if self.isPullup {
-                    // 将数据追加到底部
-                    self.statusList.append("上拉 \(i)")
-                }
-                else {
-                    // 将数据插入到数组的顶部
-                    self.statusList.insert(i.description, at: 0)
-                }
-            }
+        listViewModel.loadStatus(pullup: self.isPullup) { (isSuccess, shouldRefresh) in
             
             print("加载数据结束")
             
@@ -43,9 +31,12 @@ class TLHomeViewController: TLBaseViewController {
             self.isPullup = false
             
             // 刷新表格
-            self.tableView?.reloadData()
+            
+            if shouldRefresh {
+                self.tableView?.reloadData()
+            }
+            
         }
-        
     }
     
     @objc fileprivate func showFriends() {
@@ -62,7 +53,7 @@ class TLHomeViewController: TLBaseViewController {
 extension TLHomeViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return statusList.count
+        return listViewModel.statusList.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -71,7 +62,7 @@ extension TLHomeViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
         
         // 2. 设置 cell
-        cell.textLabel?.text = statusList[indexPath.row]
+        cell.textLabel?.text = listViewModel.statusList[indexPath.row].text
         
         // 3. 返回 cell
         return cell
@@ -102,5 +93,25 @@ extension TLHomeViewController {
         
         // 注册原型cell
         tableView?.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
+        
+        setupNavTitle()
     }
+    
+    /// 设置导航栏标题
+    fileprivate func setupNavTitle() {
+        
+        let title = TLNetworkManager.shared.userAccount.screen_name
+
+        let button = TLTitleButton(title: title)
+        navItem.titleView = button
+        
+        button.addTarget(self, action: #selector(clickTitleButton), for: .touchUpInside)
+    }
+    
+    @objc fileprivate func clickTitleButton(btn: UIButton) {
+        
+        // 设置选择状态
+        btn.isSelected = !btn.isSelected
+    }
+    
 }

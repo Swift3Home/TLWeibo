@@ -14,6 +14,9 @@ class TLDiscoverViewController: TLBaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        // 模拟 登录
+        // TLNetworkManager.shared.userAccount.access_token = "hello token"
     }
 
     override func didReceiveMemoryWarning() {

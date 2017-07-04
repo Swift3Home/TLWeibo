@@ -18,8 +18,6 @@ import UIKit
 
 // MARK: - 所有主控制器的基类控制器
 class TLBaseViewController: UIViewController {
-    // 用户登录标记
-    var userLogon = false
     
     var visitorInfoDictionary: [String: String]?
     
@@ -40,10 +38,21 @@ class TLBaseViewController: UIViewController {
         super.viewDidLoad()
         
         setupUI()
-        loadData()
         
-        // 设置内容缩进
-        tableView?.contentInset = UIEdgeInsets(top: navigationBar.bounds.height, left: 0, bottom: tabBarController?.tabBar.bounds.height ?? 49, right: 0)
+        TLNetworkManager.shared.userLogon ? loadData(): ()
+        
+        // 注册通知
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(loginSuccess),
+            name: NSNotification.Name(rawValue: TLUserLoginSuccessNotification),
+            object: nil)
+        
+    }
+    
+    deinit {
+        // 注销通知
+        NotificationCenter.default.removeObserver(self)
     }
     
     // 重写 title 的 didSet 方法
@@ -65,8 +74,27 @@ class TLBaseViewController: UIViewController {
 // MARK: - 访客视图监听方法
 extension TLBaseViewController {
     
+    // 登录成功处理
+    @objc fileprivate func loginSuccess() {
+        
+        print("登录成功")
+        
+        // 登录前 左边是好友，右边是登录
+        navItem.leftBarButtonItem = nil
+        navItem.rightBarButtonItem = nil
+        
+        // 更新 UI -> 将访客视图替换为表格视图
+        // 需要重新设置view：在访问view 的getter 时，如果view == nil，会调用 loadView -> viewDidLoad
+        view = nil
+        
+        // 注销通知 -> 重复执行 viewDidLoad 会再次注册！避免通知被重复注册
+        NotificationCenter.default.removeObserver(self)
+        
+    }
+    
     @objc fileprivate func login() {
-        print("用户登录")
+        // 发送通知
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: TLUserShouldLoginNotification), object: nil)
     }
     
     @objc fileprivate func register() {
@@ -86,7 +114,7 @@ extension TLBaseViewController {
         
         setupNavigationBar()
         
-        userLogon ? setupTableView() : setupVisitorView()
+        TLNetworkManager.shared.userLogon ? setupTableView() : setupVisitorView()
     }
     
     
@@ -100,6 +128,12 @@ extension TLBaseViewController {
         // 设置数据源和代理 -> 目的：子类直接实现数据源方法
         tableView?.dataSource = self
         tableView?.delegate = self
+        
+        // 设置内容缩进
+        tableView?.contentInset = UIEdgeInsets(top: navigationBar.bounds.height, left: 0, bottom: tabBarController?.tabBar.bounds.height ?? 49, right: 0)
+        
+        // 修改指示器的缩进
+        tableView?.scrollIndicatorInsets = (tableView?.contentInset)!
         
         // 设置刷新控件
         // 1.实例化控件
