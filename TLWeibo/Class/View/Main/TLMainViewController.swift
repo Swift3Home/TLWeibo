@@ -153,8 +153,7 @@ extension TLMainViewController {
         _ = try? currentVersion.write(toFile: path, atomically: true, encoding: .utf8)
         
         // 4. 返回两个版本号是否一致
-//        return currentVersion != sandboxVersion
-        return currentVersion == sandboxVersion
+        return currentVersion != sandboxVersion
     }
     
 }
@@ -191,6 +190,10 @@ extension TLMainViewController: UITabBarControllerDelegate {
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: { 
                 vc.loadData()
             })
+            
+            // 5> 清除 tabItem 的 badgeNumber
+            vc.tabBarItem.badgeValue = nil
+            UIApplication.shared.applicationIconBadgeNumber = 0
         }
         
         // 判断目标控制器是否是 UIViewController

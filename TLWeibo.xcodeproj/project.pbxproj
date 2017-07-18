@@ -274,11 +274,11 @@
 		7EDB647D1EE995D9009242C7 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				7EDB64E51EEC4CBC009242C7 /* MainController */,
 				7E96105C1F06982100FFDC93 /* NewFeature */,
 				7EB206601EF7CFF8009DA507 /* OAuth */,
-				7EDB64DF1EEBB9EB009242C7 /* TLTest */,
-				7EDB64E51EEC4CBC009242C7 /* MainController */,
 				7EDB64E61EED2B73009242C7 /* VisitorView */,
+				7EDB64DF1EEBB9EB009242C7 /* TLTest */,
 				7EDB64851EE996DA009242C7 /* TLBaseViewController.swift */,
 			);
 			path = Main;

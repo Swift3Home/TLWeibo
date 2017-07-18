@@ -14,6 +14,8 @@ class TLWelcomeView: UIView {
     @IBOutlet weak var iconView: UIImageView!
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var bottomCons: NSLayoutConstraint!
+    // 图标宽度约束
+    @IBOutlet weak var iconWidthCons: NSLayoutConstraint!
     
     class func welcomeView() -> TLWelcomeView {
         
@@ -34,6 +36,7 @@ class TLWelcomeView: UIView {
         print("initWithCoder + \(iconView)")
     }
     
+    // 从 XIB 加载完成调用
     override func awakeFromNib() {
         
         // 1. url
@@ -46,8 +49,8 @@ class TLWelcomeView: UIView {
         iconView.sd_setImage(with: url,
                              placeholderImage: UIImage(named: "avatar_default_big"))
         
-        // 3. FIXME: - 设置圆角
-        iconView.layer.cornerRadius = iconView.layer.cornerRadius * 0.5
+        // 3. FIXME: - 设置圆角(iconView的 bounds 还没有设置)
+        iconView.layer.cornerRadius = iconWidthCons.constant * 0.5
         iconView.layer.masksToBounds = true
     }
     
