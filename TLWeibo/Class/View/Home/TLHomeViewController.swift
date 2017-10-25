@@ -58,14 +58,19 @@ extension TLHomeViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        // 1. 取 cell
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
+        // 1. 取 cell  --方法一
+//        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
+        // 1. 取 cell方法二
+        var cell:UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: cellId)
+        if cell == nil {
+            cell = UITableViewCell.init(style: .default, reuseIdentifier: cellId)
+        }
         
         // 2. 设置 cell
-        cell.textLabel?.text = listViewModel.statusList[indexPath.row].text
+        cell?.textLabel?.text = listViewModel.statusList[indexPath.row].text
         
         // 3. 返回 cell
-        return cell
+        return cell!
     }
     
 }
@@ -91,8 +96,8 @@ extension TLHomeViewController {
         navItem.leftBarButtonItem = UIBarButtonItem(title: "好友", target: self, action: #selector(showFriends))
 
         
-        // 注册原型cell
-        tableView?.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
+        // 注册原型cell  -- 方法一
+//        tableView?.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
         
         setupNavTitle()
     }
